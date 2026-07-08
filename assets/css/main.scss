@@ -37,3 +37,29 @@
     "layout/sidebar",
     "layout/json_cv"
 ;
+
+/* ---------------------------------------------------------------------------
+ * Custom typography overrides
+ * Goal: every heading (including each page's title) is one size, and all
+ * body text is one size. Keeps the page calm and consistent across tabs.
+ * ------------------------------------------------------------------------- */
+
+/* Headings — page titles and in-content headings all share one size */
+.page__title,
+.archive__item-title,
+.archive h1, .archive h2, .archive h3, .archive h4, .archive h5, .archive h6,
+.page__content h1, .page__content h2, .page__content h3,
+.page__content h4, .page__content h5, .page__content h6 {
+  font-size: 1.5rem !important;
+  line-height: 1.4;
+  font-weight: 700;
+  margin-top: 1.25em;
+  margin-bottom: 0.5em;
+}
+
+/* Body text — paragraphs, list items, and links in content all share one size */
+.archive p, .archive li, .archive a,
+.page__content, .page__content p, .page__content li, .page__content a {
+  font-size: 1rem !important;
+  line-height: 1.6;
+}
